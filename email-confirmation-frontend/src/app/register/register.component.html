@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="inner_container">
+    <h1 style="text-align:center">Register Form</h1>
+    <form method="POST" name="createUser" [formGroup]="createUser" (submit)="registerUser()"  enctype="multipart/form-data">
+      <input type="text" placeholder="Name" formControlName="name">
+      <input type="email" placeholder="Email" formControlName="email">
+      <input type="password" placeholder="Password" formControlName="password">
+      <button type="submit" class="submit_button">Register</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="inner_container">
+    <h1 style="text-align:center">Login</h1>
+    <form method="POST" name="loginForm" [formGroup]="loginForm" (submit)="loginUser()"  enctype="multipart/form-data">
+      <input type="email" placeholder="Email" formControlName="email">
+      <input type="password" placeholder="Password" formControlName="password">
+      <button type="submit" class="submit_button">Login</button>
+    </form>
+  </div>
+</div>
